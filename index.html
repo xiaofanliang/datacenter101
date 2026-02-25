@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Figma Embed</title>
+  <title>Data Center 101: Infrastructure and Implications</title>
   <style>
     html, body {
       height: 100%;
@@ -85,7 +85,7 @@
       align-items: center;
       cursor: pointer;
       padding: 1em;
-      font-weight: bold;
+      /* font-weight: bold; */
       font-size: 1em;
       background: none;
       user-select: none;
@@ -115,6 +115,26 @@
       transform: rotate(90deg);
     }
 
+    .content h2.section-heading {
+      font-size: 1.15em;
+      font-weight: bold;
+      margin: 1.75em 0 0.5em 0;
+      color: #333;
+    }
+    .content h2.section-heading:first-of-type {
+      margin-top: 0;
+    }
+
+    .callout-box {
+      margin: 1.5em 0;
+      padding: 1em 1.25em;
+      border-left: 4px solid #6A6A6A;
+      background: #f5f5f5;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.96em;
+      line-height: 1.5;
+    }
+
   </style>
 </head>
 <body>
@@ -135,13 +155,19 @@
 <br><br>
 This interactive visualization is a supplement to the white paper <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter101.pdf" target="_blank" rel="noopener noreferrer">“From Infrastructure to Implications: Data Center 101 for Urban Planners” (Liang, 2026)</a>. This draws on desktop research using high-quality sources and interviews with nine industry stakeholders, including data center developers, urban planners, elected officials, and contractors to answer a central question: <strong style="color: #000;">what are data centers’ implications for the urban life and built environment, and how are those implications anchored in specific data center infrastructure components?</strong>
 <br><br>
-Use interactive visualization to explore relationships between a stylized, simplified design of a hyperscale data center and key implications. This diagram is illustrative and conceptual rather than exhaustive; real-world facilities vary and may include additional infrastructure or omit elements shown here. To learn more or download a digital copy, see the <a href="https://www.xiaofanliang.com/project/datacentervis/" target="_blank" rel="noopener noreferrer">project page</a> for more details. 
+Use interactive visualization to explore relationships between a stylized, simplified design of a hyperscale data center and key implications. This diagram is illustrative and conceptual rather than exhaustive; real-world facilities vary and may include additional infrastructure or omit elements shown here. To learn more or download high resolution images, see the <a href="https://www.xiaofanliang.com/project/datacentervis/" target="_blank" rel="noopener noreferrer">project page</a> for more details. 
 <br><br>
 <b>Contributors:</b> <a href="https://www.xiaofanliang.com/" target="_blank" rel="noopener noreferrer">Xiaofan Liang</a>, <a href="https://www.mwizinsky.net/" target="_blank" rel="noopener noreferrer">Matthew Wizinsky</a>, and <a href="https://www.linkedin.com/in/yajun-dai-418978314/" target="_blank" rel="noopener noreferrer">Yajun Dai</a> (2026), University of Michigan.
 
 
+<div class="callout-box">
+Liang's research team is looking to interview urban planners whose work intersects with data centers directly or indirectly. Read more and fill out a form <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwagzynoepwrfc-3Vk1BGy4B_KIWZhBC4VH7OxTwkx_42Txw/viewform?usp=preview" target="_blank" rel="noopener noreferrer">here</a>. We are also looking for <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-uvaDQ7srTYsRgnWND01o-SN9fvE9eH-clOtX2iptB8nirQ/viewform?usp=preview" target="_blank" rel="noopener noreferrer">feedback</a> on whether this interactive prototype has supported your work (broadly defined, be it practice, media reporting, communication, teaching, research, etc.). If we gather enough interest, feedback, and evidence of impact, we will seek funding to support a v2 upgrade of the visualization.
+</div>
+
 <br><br>
 
+
+<h2 class="section-heading">From Implications to Infrastructure</h2>
 
  <!-- Collapsible Section 1: ENERGY -->
     <div class="collapsible-section">
@@ -154,7 +180,7 @@ Use interactive visualization to explore relationships between a stylized, simpl
       <div class="collapsible-content">
 <b>Generation, Transmission, Distribution </b>
 <br><br>
-Data centers introduce a new type of infrastructure demand: large, continuous electricity loads that are shaped by computing needs and cooling system design and served through transmission lines, electrical substations, and on-site backup energy systems such as diesel generators, batteries, or microgrids. The large load can trigger upgrades to these infrastructures which further reshape regional power planning, influence clean-energy transitions, and affect how reliability risks are managed during extreme events. At the local level, data center interconnections may compete with housing, electrification, and economic development for limited grid capacity, while the costs of new infrastructure may be shared across ratepayers in complex ways. Associated facilities can also change community landscapes through visual impacts, noise, traffic, and air pollution. For planners, these implications matter because they shape land-use compatibility, infrastructure investment priorities, and the fairness of who bears the costs and risks of accommodating this new form of growth.
+Data centers introduce a new type of infrastructure demand: large, continuous electricity loads that are shaped by computing needs and <strong style="color: #000;">cooling system</strong> design and served through <strong style="color: #000;">transmission lines</strong>, <strong style="color: #000;">electrical substations</strong>, and on-site backup energy systems such as <strong style="color: #000;">diesel generators</strong>, batteries, or microgrids. The large load can trigger upgrades to these infrastructures which further reshape regional power planning, influence clean-energy transitions, and affect how reliability risks are managed during extreme events. At the local level, data center interconnections may compete with housing, electrification, and economic development for limited grid capacity, while the costs of new infrastructure may be shared across ratepayers in complex ways. Associated facilities can also change community landscapes through visual impacts, noise, traffic, and air pollution. For planners, these implications matter because they shape land-use compatibility, infrastructure investment priorities, and the fairness of who bears the costs and risks of accommodating this new form of growth.
 <br><br>
 Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter101.pdf" target="_blank" rel="noopener noreferrer">“From Infrastructure to Implications: Data Center 101 for Urban Planners” (Liang, 2026)</a> for details on: 
 <ul>
@@ -177,7 +203,7 @@ Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter1
       <div class="collapsible-content">
 	<b>Water Source, Water Use, Water Discharge</b>
         <br><br>
-Water is central to remove heat from server operation. Data centers draw from municipal systems and, in some cases, groundwater sources via dedicated water lines, while wastewater from cooling systems are routed to local treatment plants. Because water is inherently local and cannot be transmitted across regions like electricity, large data center demands can strain regional water supplies and trigger costly infrastructure upgrades. These upgrades are often required late in the development process, placing financial and operational pressure on water utilities, especially in smaller or rural communities. Water use varies significantly by cooling system design and the tradeoff between water and energy efficiency. Data centers that rely on evaporative cooling can consume substantial volumes of water, with much of it lost to the atmosphere, and may require additional storage such as independent water towers. For urban planners, the central challenge is that cooling technology choices directly shape energy efficiency, water uses, and environmental impacts, which then affect long-term water resource planning and infrastructure investment needs. Planners can respond by coordinating with water utilities early, requiring transparent disclosure of projected water demand, and, where appropriate, setting cooling-system standards or conditions in zoning and site-plan review to align data center growth with local water capacity and resilience goals.
+Water is central to remove heat from server operation. Data centers draw from municipal systems and, in some cases, groundwater sources via dedicated <strong style="color: #000;">water lines</strong>, while wastewater from cooling systems are routed to local treatment plants. Because water is inherently local and cannot be transmitted across regions like electricity, large data center demands can strain regional water supplies and trigger costly infrastructure upgrades. These upgrades are often required late in the development process, placing financial and operational pressure on water utilities, especially in smaller or rural communities. Water use varies significantly by <strong style="color: #000;">cooling system</strong> design and the tradeoff between water and energy efficiency. Data centers that rely on evaporative cooling can consume substantial volumes of water, with much of it lost to the atmosphere, and may require additional storage such as <strong style="color: #000;">independent water towers</strong>. For urban planners, the central challenge is that cooling technology choices directly shape energy efficiency, water uses, and environmental impacts, which then affect long-term water resource planning and infrastructure investment needs. Planners can respond by coordinating with water utilities early, requiring transparent disclosure of projected water demand, and, where appropriate, setting cooling-system standards or conditions in zoning and site-plan review to align data center growth with local water capacity and resilience goals.
 
 <br><br>
 Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter101.pdf" target="_blank" rel="noopener noreferrer">“From Infrastructure to Implications: Data Center 101 for Urban Planners” (Liang, 2026)</a> for details on: 
@@ -201,7 +227,7 @@ Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter1
       <div class="collapsible-content">
 <b>Zoning, Land Market, Long-term Planning</b> 
 <br><br>
-Data centers require proximity to electrical substations, transmission lines, and fiber-optic backbones, which can introduce new land uses associated with these supporting infrastructures and reshaping how land is zoned, valued, and developed. Local zoning frameworks determine where and how these facilities are permitted, but data centers often do not fit neatly into existing industrial or commercial categories due to their scale, infrastructure demands, and operational characteristics. Their development can trigger farmland conversion, land-value speculation, competition for industrial land, and the siting of associated facilities such as substations, transmission corridors, and water infrastructure. Over time, the land-use footprint of data centers shapes not only the feasibility of individual sites but also broader questions about strategic co-location of mutually beneficial uses, land-value speculation, growth management, compatibility with surrounding development, and the long-term end use or reuse of such large, single-purpose facilities. For planners, the central challenge is navigating uncertain and rapidly evolving industry needs while accounting for implications for land markets, community compatibility, and future reuse.
+Data centers require proximity to <strong style="color: #000;">electrical substations</strong>, <strong style="color: #000;">transmission lines</strong>, and <strong style="color: #000;">fiber-optic backbones</strong>, which can introduce new <strong style="color: #000;">land uses</strong> associated with these supporting infrastructures and reshaping how land is zoned, valued, and developed. Local zoning frameworks determine where and how these facilities are permitted, but data centers often do not fit neatly into existing industrial or commercial categories due to their scale, infrastructure demands, and operational characteristics. Their development can trigger farmland conversion, land-value speculation, competition for industrial land, and the siting of associated facilities such as substations, transmission corridors, and water infrastructure. Over time, the land-use footprint of data centers shapes not only the feasibility of individual sites but also broader questions about strategic co-location of mutually beneficial uses, land-value speculation, growth management, compatibility with surrounding development, and the long-term end use or reuse of such large, single-purpose facilities. For planners, the central challenge is navigating uncertain and rapidly evolving industry needs while accounting for implications for land markets, community compatibility, and future reuse.
 <br><br>
 Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter101.pdf" target="_blank" rel="noopener noreferrer">“From Infrastructure to Implications: Data Center 101 for Urban Planners” (Liang, 2026)</a> for details on: 
 <ul>
@@ -226,7 +252,7 @@ Transportation,
 Residential Experience</b>
 <br><br>
 
-Data centers can affect nearby residents’ quality of life through noise from diesel generators and cooling fans, light pollution from 24/7 street lighting for security, neighborhood traffic disruptions during construction or emergency fueling activities, and visual impacts from large, windowless server hall buildings, expanded transmission lines, and fortified security perimeters. Landscape screening is a common though limited mitigation strategy to soften these visual effects. In addition, data centers can generate substantial traffic on local roads during construction, and the number drops significantly once in operation. Still, operational staff will need dedicated employee parking and loading bays for equipment. Over the longer term, local housing demand increases as construction and operations workers seek nearby living options. For planners, the central challenge is anticipating and managing these cumulative, place-based impacts on housing markets, transportation systems, and everyday residential experience when many effects emerge gradually, cross jurisdictional boundaries, and are difficult to reverse once facilities and supporting infrastructure are in place.
+Data centers can affect nearby residents’ quality of life through noise from <strong style="color: #000;">diesel generators</strong> and <strong style="color: #000;">cooling system fans</strong>, light pollution from 24/7 <strong style="color: #000;">street lighting</strong> for security, neighborhood traffic disruptions during construction or emergency fueling, including activity around <strong style="color: #000;">visitor parking</strong> areas and equipment <strong style="color: #000;">loading bays</strong>, and visual impacts from large, windowless <strong style="color: #000;">server hall</strong> buildings, expanded <strong style="color: #000;">transmission lines and substations</strong>, and fortified <strong style="color: #000;">security perimeters</strong>. <strong style="color: #000;">Landscape screening</strong> is a common though limited mitigation strategy to soften these visual effects. While construction-related traffic may decline once facilities are operational, other impacts, such as noise, lighting, and large-scale physical infrastructure, often persist for the life of the facility once permitted and installed. Over the longer term, local housing demand increases as construction and operations workers seek nearby living options. For planners, the central challenge is anticipating and managing these cumulative, place-based impacts on housing markets, transportation systems, and everyday residential experience when many effects emerge gradually, cross jurisdictional boundaries, and are difficult to reverse once facilities and supporting infrastructure are in place.
 <br><br>
 Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter101.pdf" target="_blank" rel="noopener noreferrer">“From Infrastructure to Implications: Data Center 101 for Urban Planners” (Liang, 2026)</a> for details on: 
 <ul>
@@ -252,7 +278,7 @@ Jobs,
 Ancillary Businesses</b>
 <br><br>
 
-Data centers contribute significant tax revenues to local governments, from real estate and property taxes on infrastructure investments to business and sales taxes generated by daily operations and computer equipment in server halls. They also create direct and indirect jobs in office and site operations. The job counts tend to be higher during the construction phase than in ongoing operations. Data centers’ high tax yield per capita can make them attractive to jurisdictions seeking new revenue sources, yet the relatively small number of permanent jobs raises questions about the depth and distribution of local economic benefits. These dynamics are further complicated by tax incentives, negotiated abatements, and uneven bargaining power across jurisdictions, which can shape how much value communities ultimately retain. For planners, the central challenge is evaluating whether the fiscal gains, employment opportunities, and secondary economic activity justify the long-term land, infrastructure, and public resource commitments, especially when benefits are immediate and visible, but costs and tradeoffs unfold over decades and vary widely across communities.
+Data centers contribute significant tax revenues to local governments, from real estate and property taxes on infrastructure investments to business and sales taxes generated by daily operations and computer equipment in <strong style="color: #000;">server halls</strong>. They also create direct and indirect jobs in <strong style="color: #000;">office</strong> and site operations. The job counts tend to be higher during the construction phase than in ongoing operations. Data centers’ high tax yield per capita can make them attractive to jurisdictions seeking new revenue sources, yet the relatively small number of permanent jobs raises questions about the depth and distribution of local economic benefits. These dynamics are further complicated by tax incentives, negotiated abatements, and uneven bargaining power across jurisdictions, which can shape how much value communities ultimately retain. For planners, the central challenge is evaluating whether the fiscal gains, employment opportunities, and secondary economic activity justify the long-term land, infrastructure, and public resource commitments, especially when benefits are immediate and visible, but costs and tradeoffs unfold over decades and vary widely across communities.
 <br><br>
 Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter101.pdf" target="_blank" rel="noopener noreferrer">“From Infrastructure to Implications: Data Center 101 for Urban Planners” (Liang, 2026)</a> for details on: 
 <ul>
@@ -278,7 +304,7 @@ Water & Waste,
 Governance</b>
 <br><br>
 
-Data centers create layered environmental impacts. Heat from server halls is released through cooling systems. Air pollution is driven largely by backup diesel generators that emit PM2.5 and NOx during testing and outages, while water and chemical risks depend on how cooling systems are designed and managed. In addition, 24/7 street lighting can contribute to light pollution and nighttime skyglow, especially near residential areas and sensitive habitats. Over time, rapid equipment turnover in server halls generates substantial e-waste, potentially implicating persistent chemicals such as Pfas. Regulation is strongest for air emissions and wastewater permits, but far weaker for localized heat and light externalities, making environmental outcomes highly dependent on how these infrastructure components are designed, monitored, and governed. For planners, the central challenge is navigating fragmented regulatory authority across local, state, and federal levels, alongside scientific uncertainty, while making land-use decisions that embed long-term environmental externalities, many of which are incremental, dispersed, and not fully captured by existing permitting frameworks.
+Data centers create layered environmental impacts. Heat from server halls is released through <strong style="color: #000;">cooling systems</strong>. Air pollution is driven largely by backup <strong style="color: #000;">diesel generators</strong> that emit PM2.5 and NOx during testing and outages, while water and chemical risks depend on how cooling systems are designed and managed. In addition, 24/7 <strong style="color: #000;">street lighting</strong> can contribute to light pollution and nighttime skyglow, especially near residential areas and sensitive habitats. Over time, rapid equipment turnover in <strong style="color: #000;">server halls</strong> generates substantial e-waste, potentially implicating persistent chemicals such as Pfas. Regulation is strongest for air emissions and wastewater permits, but far weaker for localized heat and light externalities, making environmental outcomes highly dependent on how these infrastructure components are designed, monitored, and governed. For planners, the central challenge is navigating fragmented regulatory authority across local, state, and federal levels, alongside scientific uncertainty, while making land-use decisions that embed long-term environmental externalities, many of which are incremental, dispersed, and not fully captured by existing permitting frameworks.
 
 <br><br>
 Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter101.pdf" target="_blank" rel="noopener noreferrer">“From Infrastructure to Implications: Data Center 101 for Urban Planners” (Liang, 2026)</a> for details on: 
@@ -289,6 +315,172 @@ Read <a href="https://www.xiaofanliang.com/publication/DataCenterVis/DataCenter1
 </ul>
 
 
+      </div>
+    </div>
+
+<h2 class="section-heading">From Infrastructure to Implications</h2>
+
+    <!-- Collapsible: Transmission Line and Electrical Substations -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Transmission Lines and Electrical Substations
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+Most data center facilities need dedicated high-voltage, on-site or adjacent <strong style="color: #000;">transmission lines</strong> and <strong style="color: #000;">electrical substations</strong> to step voltage down for safe distribution, while smaller sites may simply connect to existing grid infrastructure without new buildouts.
+<br><br>
+For <strong style="color: #000;">energy systems</strong>, construction of additional transmission lines and electrical substations can trigger broader grid upgrades, affect how utilities plan for reliability during extreme events, and influence clean energy integration. At the same time, connecting data centers to transmission networks can use up limited grid capacity, potentially competing with housing, electrification, or other industries. The costs of these upgrades may be spread across ratepayers, although utilities are increasingly testing new pricing and cost-sharing approaches to ensure data centers cover a larger share of the infrastructure they require.
+<br><br>
+For <strong style="color: #000;">land use</strong>, transmission lines require corridors, easements, and substations, expanding the physical footprint of data center development beyond the server building itself. These corridors can limit where housing or other development can occur and may alter zoning decisions, land values, and growth patterns. In rural or fast-growing areas, reviewing transmission applications can take significant staff time. Because utilities often plan transmission expansions years in advance, planners must coordinate early to understand where lines are likely to extend and which areas may become more or less suitable for future development. Buffers such as parks, forests, or open space are sometimes used to reduce long-term land-use conflicts between high-voltage infrastructure and nearby neighborhoods.
+<br><br>
+For <strong style="color: #000;">quality of life</strong>, large overhead transmission lines and substations are highly visible, can change views and rural character, and often trigger community opposition, especially when residents do not directly benefit from the electricity being transmitted.
+      </div>
+    </div>
+
+    <!-- Collapsible: Backup Diesel Generators -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Backup Diesel Generators
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+<strong style="color: #000;">Backup diesel generators</strong> serve as critical backup power systems for data centers' <strong style="color: #000;">energy systems</strong>. While facilities primarily rely on the electricity grid for continuous operation (baseload power), diesel generators provide longer-duration emergency power when the grid fails or becomes unstable. They work alongside uninterruptible power supplies (UPS), which deliver instant short-term power during the brief transition from grid outage to generator startup. Because data centers can tolerate only minimal downtime, diesel systems are designed for high reliability and rapid response.
+<br><br>
+While diesel generators are used infrequently, when they are in operation, they can produce significant <strong style="color: #000;">environmental impacts</strong> such as noise and air pollution, which also affects nearby residents' quality of life. Governance of these impacts is complicated by the need to ease data center's strain on local grids. For example, during extreme weather or periods of grid stress, policies may allow longer operating hours for backup generators to enhance resilience, particularly in areas where multiple data centers cluster. Mitigation strategies include the use of biodiesel or renewable diesel as lower-emission fuel alternatives and the installation of newer generators that meet EPA Tier 4 standards, which produce substantially lower particulate matter and nitrogen oxide emissions than older Tier 1–3 models. Emerging energy technologies such as hydrogen fuel cells, long-duration on-site battery storage energy systems and renewables, gas turbines, and small modular reactors, are seeking to replace backup diesel generators due to their environmental impacts and disturbance to local communities.
+      </div>
+    </div>
+
+    <!-- Collapsible: Water Lines and Independent Water Towers -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Water Lines and Independent Water Towers
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+Water infrastructure varies based on the data centers' cooling system design. Data centers using water-based cooling systems (e.g., evaporative cooling systems) behave like industrial water users, typically requiring dedicated <strong style="color: #000;">water lines</strong> to draw large volumes of water from municipal water supplies, groundwater wells, surface waters like nearby lakes or rivers, or reclaimed water (i.e., wastewater that has been treated for reuse) for cooling and operations. These systems may require additional water storage infrastructure such as <strong style="color: #000;">independent water towers</strong> as backup water sources. Others using dry cooling or closed-loop cooling behave more like large office buildings and only use minimal water for sanitary purposes.
+<br><br>
+Regardless of what cooling systems are used, <strong style="color: #000;">wastewater lines (sewer lines)</strong> are common to carry used water or periodic flushing of coolants out for treatment or discharge. Data center wastewater is often regulated through industrial pretreatment programs, requiring permits and sometimes on-site treatment before discharge to protect public sewer systems. The volume and chemical composition of cooling-system wastewater can strain local treatment capacity and trigger costly infrastructure upgrades, sometimes with little lead time for local governments. Some communities had built separate industrial treatment facilities to manage and reuse cooling blowdowns from data centers. In rural areas without municipal water or sewer service, data centers must develop their own supply and wastewater systems, such as wells, lagoons, septic systems, or land-application permits for treated reuse, adding further planning and infrastructure considerations.
+      </div>
+    </div>
+
+    <!-- Collapsible: Cooling System -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Cooling System
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+Cooling systems are necessary to remove heat from servers in data centers. From a <strong style="color: #000;">water</strong> perspective, <strong style="color: #000;">cooling systems</strong> can be major consumers depending on design. Evaporative cooling systems require large volumes of water, much of which is lost to evaporation and does not return to local systems, while air-cooled or closed-loop liquid systems use far less. These differences matter for local water supply planning, particularly in regions facing drought or competing water demands, as the choice of cooling technology directly shapes how much freshwater is withdrawn and whether wastewater is produced.
+<br><br>
+Cooling design also has direct <strong style="color: #000;">energy</strong> implications. Cooling systems that minimize water use, such as air-cooled or dry cooling technologies, often require more electricity to operate fans, chillers, or refrigeration equipment. Conversely, water-intensive cooling can reduce energy demand but increase pressure on local water resources. As a result, cooling strategies often involve tradeoffs between water and energy consumption, influencing grid demand, operating costs, and sustainability goals.
+<br><br>
+<strong style="color: #000;">Quality of life</strong> impacts are also tied to cooling infrastructure. Large <strong style="color: #000;">cooling fans</strong> and cooling towers operate continuously and, at scale, can create a low-frequency hum that carries beyond property lines.
+<br><br>
+<strong style="color: #000;">Environmental implications</strong> extend beyond water and energy use. <strong style="color: #000;">Cooling systems</strong> release waste heat, which may contribute to localized temperature changes, though the scale of microclimate effects and opportunities for heat reuse remain uncertain and context-dependent. Some systems may also contribute to localized air pollution depending on the facility's design and energy sources. These impacts are especially noticeable in communities located near large data center campuses. Additionally, data centers also generate substantial e-waste as computer equipment is upgraded every two to three years. Reporters have noted that large amounts of Pfas are used in manufacturing these components and cooling systems. Because Pfas chemicals do not break down in the environment, they can pose serious and long-lasting environmental health risks.
+<br><br>
+Urban planners and local communities can also assert their preferences by amending zoning documents to impose specific requirements on data centers, such as mandating closed-loop <strong style="color: #000;">cooling systems</strong> or establishing enhanced setbacks near residential areas.
+      </div>
+    </div>
+
+    <!-- Collapsible: Land -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Land
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+Data centers require large parcels of <strong style="color: #000;">land</strong> to build facilities and can trigger regional land use growth to support the increasing energy, water, and human activities. The immediate land use to build data centers is regulated through local <strong style="color: #000;">zoning ordinances</strong>. Local communities may need to update zoning codes to deliberate whether data centers should be permitted by right, as special overlay districts, or discretionary planned developments, which shapes how much control planners and residents have over siting, design, and impacts.
+<br><br>
+Data center presence also affects <strong style="color: #000;">land markets</strong> as they frequently compete with farmland and limited industrial land, prompting farmland conversion. In areas where clusters emerge, land values can rise rapidly, creating wealth opportunities for landowners but making land less affordable for local industrial businesses and farmers.
+<br><br>
+Data centers can trigger a cascade of <strong style="color: #000;">supporting land uses and infrastructure siting</strong> in the region, such as substations, transmission corridors, water facilities, and fiber networks, which can take significant planning staff time for permit and review. New land use or colocation models may arise, such as bundling data centers with on-site renewables and storage into microgrid-style "energy parks" to enhance redundancy and reliability, converging aging malls into data centers, or pairing data centers with greenhouses to reuse waste heat. These uses are often regulated through fragmented approval processes across energy, environmental, and land-use authorities, making cumulative impacts difficult for local governments to evaluate.
+<br><br>
+In the long-term, communities must consider future reuse of large single-purpose buildings, the risk of oversupply as technologies change, and the need for adaptive reuse plans or decommissioning requirements. Planners can also proactively separate land uses suitable for data centers away from potential residential development.
+      </div>
+    </div>
+
+    <!-- Collapsible: Fiber Optic -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Fiber Optic
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+Data centers rely on <strong style="color: #000;">fiber-optic packs</strong> to move data into and out of the facility, and these cables are typically installed underground within existing road rights-of-way (ROW) for easier access and maintenance. Together with large water lines, dense fiber-optic bundles may strain the public ROW <strong style="color: #000;">underground land use</strong>, limiting space for municipal uses or future developments. The data-center-grade fiber is not directly compatible with household broadband fiber. Unless communities negotiate local access or form partnerships with data centers to provide free access, those living near data centers may still struggle with slow or unreliable internet.
+<br><br>
+Because fiber-optic connectivity is key to data center operations and tends to stay invisible to the public, it can create complex governance risks. In Morrow County, Oregon, local public officials were accused of using insider knowledge of upcoming data center expansion to acquire a non-profit fiber-optic company at a discounted price and personally benefit from the surge in demand for connectivity services serving those facilities.
+      </div>
+    </div>
+
+    <!-- Collapsible: Landscape Screening and Security Perimeter -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Landscape Screening and Security Perimeter
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+Security is a central design and operational priority for data centers because outages or data loss can lead to substantial financial loss. As a result, sites typically include controlled entry gates, <strong style="color: #000;">security perimeters</strong>, and a ring road for monitoring and emergency access. These features must be incorporated early in site planning and can shape nearby residents' <strong style="color: #000;">quality of life</strong> through their effects on visibility, access, and the character of the surrounding environment.
+<br><br>
+<strong style="color: #000;">Landscape screening</strong> is commonly used to soften the visual presence of these facilities, including security perimeters and large buildings, and in some cases to help buffer noise. Vegetation and berms can also serve security functions by limiting visibility into operations.
+<br><br>
+Together, security perimeters and landscape screening signal how data centers, particularly hyperscale facilities, function as self-contained, tightly controlled infrastructure sites, often physically and symbolically separated from their surrounding communities.
+      </div>
+    </div>
+
+    <!-- Collapsible: Street Light -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Street Light
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+<strong style="color: #000;">Street or office lights</strong> are on 24/7 in data centers for security and operational purposes. These lights can contribute to <strong style="color: #000;">light pollution</strong> and nighttime skyglow, especially near residential areas and sensitive habitats, affecting both the surrounding <strong style="color: #000;">environment</strong> and nearby residents' <strong style="color: #000;">quality of life</strong>. There is no federal regulation on light, but local governments can regulate light pollution through zoning code or site plan review such as imposing shielding, fixture, and curfew requirements to minimize light impacts on nearby residents. Some states have outdoor lighting ordinances, though not targeted toward data centers. Developers may also be willing to do minor adjustments on the facilities to reduce noise and light impacts.
+      </div>
+    </div>
+
+    <!-- Collapsible: Visitor Parking and Loading Bay -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Visitor Parking and Loading Bay
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+<strong style="color: #000;">Visitor parking</strong> often is located at the front of the office and supporting spaces, serving employees, security staff, and visitors. The <strong style="color: #000;">loading bay</strong> is typically positioned at the rear of the facility, where equipment is delivered, installed, and maintained, and where fuel trucks may park if diesel generators are used. These infrastructures support human and equipment traffic.
+<br><br>
+During construction, these areas accommodate large volumes of worker vehicles and heavy equipment deliveries, which can strain local roads and often trigger traffic impact assessments during rezoning or site plan review. Although daily trips typically decline once operations begin, parking and loading infrastructures continue to support staff, vendors, maintenance, and occasional fuel deliveries during emergencies. Fuel trucks may need to park on adjacent roads, creating traffic disruptions that affect nearby residents' <strong style="color: #000;">quality of life</strong>.
+<br><br>
+As a result, accommodating data centers may require new access roads, intersection upgrades, or improvements to shoulders, sidewalks, and multimodal paths. When upgrades extend beyond the site, questions arise over who pays and who benefits, and these improvements are often negotiated through mitigation measures or community benefit agreements.
+      </div>
+    </div>
+
+    <!-- Collapsible: Server Hall & Office and Support Space -->
+    <div class="collapsible-section">
+      <div class="collapsible-header">
+        Server Hall &amp; Office and Support Space
+        <svg class="collapsible-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" fill="none" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="collapsible-content">
+<strong style="color: #000;">Server halls</strong> host computer equipment "tenants," while <strong style="color: #000;">offices and support spaces</strong> accommodate construction crews, facility operators, and administrative staff. The rapid turnover and high value of computer equipment housed in server halls can generate substantial local <strong style="color: #000;">tax revenue</strong> through property, business, and sales taxes, while on-site staff contribute to <strong style="color: #000;">job creation</strong> and <strong style="color: #000;">local economic activity</strong>. Beyond the site, construction and operations create demand for contractors, suppliers, and local services, and infrastructure upgrades tied to data centers may attract additional businesses and influence regional development. These benefits can vary widely depending on tax incentives, negotiated agreements, and local bargaining capacity.
       </div>
     </div>
 
